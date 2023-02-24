@@ -39,7 +39,7 @@ $dbConfig = array(
     'dbname' => $installData['db-name'],
     'user' => $installData['db-user-name'],
     'password' => $installData['db-user-password'],
-    'sslCa' => $installData['db-ssl-ca'],
+    'sslCA' => $installData['db-ssl-ca'],
 );
 
 $mysqlRequirementList = $installer->getSystemRequirementList('database', false, ['database' => $dbConfig]);

@@ -60,7 +60,7 @@ $fields = array(
         'default' => $config->get('database.password', ''),
     ),
     'db-ssl-ca' => array(
-        'default' => $config->get('database.sslCa', ''),
+        'default' => $config->get('database.sslCA', ''),
     ),
 );
 

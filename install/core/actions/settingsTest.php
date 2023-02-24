@@ -70,7 +70,7 @@ if ($result['success'] && !empty($allPostData['dbName']) && !empty($allPostData[
         'user' => $dbUserName,
         'password' => $dbUserPass,
         'dbname' => $dbName,
-        'sslCa' => $sslCa,
+        'sslCA' => $sslCa,
     ];
 
     $isConnected = true;
