@@ -36,7 +36,7 @@ return [
         'dbname' => '',
         'user' => '',
         'password' => '',
-        'sslCa' => '/etc/pre-install/DigiCertGlobalRootCA.crt.pem',
+        'sslCa' => '/etc/pre-install/DigiCertGlobalRootCA.crt.pem'
     ],
     'useCache' => true,
     /** Max number of jobs per one execution. */

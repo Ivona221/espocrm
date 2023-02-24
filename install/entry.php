@@ -59,7 +59,7 @@ $ignoredFields = [
     'hostName',
     'dbUserName',
     'dbUserPass',
-    'dbDriver',,
+    'dbDriver',
     'sslCa'
 ];
 
