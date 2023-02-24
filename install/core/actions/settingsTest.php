@@ -62,7 +62,7 @@ if ($result['success'] && !empty($allPostData['dbName']) && !empty($allPostData[
     list($hostName, $port) = explode(':', trim($allPostData['hostName']));
     $dbUserName = trim($allPostData['dbUserName']);
     $dbUserPass = trim($allPostData['dbUserPass']);
-    $dbSslCa = trim($allPostData['dbSslCa']);
+    $sslCa = trim($allPostData['dbSslCa']);
 
     $databaseParams = [
         'host' => $hostName,
@@ -70,7 +70,7 @@ if ($result['success'] && !empty($allPostData['dbName']) && !empty($allPostData[
         'user' => $dbUserName,
         'password' => $dbUserPass,
         'dbname' => $dbName,
-        'sslCa' => $dbSslCa
+        'sslCa' => $sslCa,
     ];
 
     $isConnected = true;

@@ -36,7 +36,7 @@ return [
         'dbname' => '',
         'user' => '',
         'password' => '',
-        'sslCa' => ''
+        'sslCa' => '',
     ],
     'useCache' => true,
     /** Max number of jobs per one execution. */

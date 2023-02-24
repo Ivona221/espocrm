@@ -69,7 +69,6 @@ class DefaultPDOProvider implements PDOProvider
         $charset = $this->databaseParams->getCharset();
         $username = $this->databaseParams->getUsername();
         $password = $this->databaseParams->getPassword();
-        $sslCa = $this->databaseParams->getSslCa();
 
         if (!$platform) {
             throw new RuntimeException("No 'platform' parameter.");
@@ -91,10 +90,6 @@ class DefaultPDOProvider implements PDOProvider
 
         if ($charset) {
             $dsn .= ';' . 'charset=' . $charset;
-        }
-
-        if ($sslCa) {
-            $sslCa .= ';' . 'sslCa=' . $sslCa;
         }
 
         $options = Options::getOptionsFromDatabaseParams($this->databaseParams);

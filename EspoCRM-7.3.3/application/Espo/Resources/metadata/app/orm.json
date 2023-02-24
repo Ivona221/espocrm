@@ -1,8 +1,0 @@
-{
-    "functionConverterClassNameMap_Mysql": {
-        "ABS": "Espo\\Core\\ORM\\QueryComposer\\Part\\FunctionConverters\\Abs"
-    },
-    "queryComposerClassNameMap": {
-        "Mysql": "Espo\\ORM\\QueryComposer\\MysqlQueryComposer"
-    }
-}

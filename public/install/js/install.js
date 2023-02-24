@@ -368,6 +368,7 @@ InstallScript.prototype.setConnSett = function() {
 	this.connSett.dbUserName = $('[name="db-user-name"]').val();
 	this.connSett.dbUserPass = $('[name="db-user-password"]').val();
 	this.connSett.dbDriver = $('[name="db-driver"]').val();
+	this.connSett.dbSslCa = $('[name="db-ssl-ca"]').val();
 }
 
 InstallScript.prototype.setUserSett = function() {

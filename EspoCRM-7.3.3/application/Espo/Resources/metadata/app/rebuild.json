@@ -1,6 +1,0 @@
-{
-    "actionClassNameList": [
-        "Espo\\Core\\Rebuild\\Actions\\ScheduledJobs",
-        "Espo\\Core\\Rebuild\\Actions\\ConfigMetadataCheck"
-    ]
-}

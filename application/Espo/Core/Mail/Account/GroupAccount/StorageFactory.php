@@ -67,7 +67,6 @@ class StorageFactory implements StorageFactoryInterface
 
         $params = Params::createBuilder()
             ->setHost($imapParams->getHost())
-            ->setSslCa($imapParams->getSslCa())
             ->setPort($imapParams->getPort())
             ->setSecurity($imapParams->getSecurity())
             ->setUsername($imapParams->getUsername())
@@ -88,7 +87,6 @@ class StorageFactory implements StorageFactoryInterface
             'password' => $params->getPassword(),
             'imapHandler' => $params->getImapHandlerClassName(),
             'id' => $params->getId(),
-            'sslCa' => $params->getSslCa(),
         ];
 
         if ($params->getSecurity()) {
@@ -126,7 +124,6 @@ class StorageFactory implements StorageFactoryInterface
                 'port' => $rawParams['port'],
                 'user' => $rawParams['username'],
                 'password' => $rawParams['password'],
-                'sslCa' => $rawParams['sslCa'],
             ];
 
             if (!empty($rawParams['security'])) {
